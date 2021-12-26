@@ -1490,7 +1490,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			
 			Dropdown.MouseButton1Click:Connect(function()
 				if DropToggled == false then
-					Title.Text = text
+					Title.Text = text.." - "..Selected
 					Dropdown:TweenSize(UDim2.new(0, 457, 0, FrameSize), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					DropdownPattern:TweenSize(UDim2.new(0, 457, 0, FrameSize), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					TweenService:Create(
@@ -1531,7 +1531,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 					wait(.4)
 					Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 				else
-					Title.Text = Selected
+					Title.Text = text.." - "..Selected
 					Dropdown:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					DropdownPattern:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					TweenService:Create(
@@ -1624,7 +1624,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 				Item.MouseButton1Click:Connect(function()
 					pcall(callback, v)
 					Selected = v
-					Title.Text = text..Selected
+					Title.Text = text.." - "..Selected
 					DropToggled = not DropToggled
 					Dropdown:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					DropdownPattern:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
@@ -1716,7 +1716,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 
 				Item.MouseButton1Click:Connect(function()
 					pcall(callback, addtext)
-					Title.Text = text..Selected
+					Title.Text = text.." - "..Selected
 					Selected = addtext
 					DropToggled = not DropToggled
 					Dropdown:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
@@ -1760,7 +1760,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 					Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
 				end)
 				if DropToggled == true then
-					Title.Text = text..Selected
+					Title.Text = text.." - "..Selected
 					Dropdown:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					DropdownPattern:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					TweenService:Create(
