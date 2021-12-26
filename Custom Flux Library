@@ -1623,8 +1623,8 @@ function Flux:Window(text, bottom,mainclr,toclose)
 				
 				Item.MouseButton1Click:Connect(function()
 					pcall(callback, v)
-					Title.Text = text
 					Selected = v
+					Title.Text = text
 					DropToggled = not DropToggled
 					Dropdown:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					DropdownPattern:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
