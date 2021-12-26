@@ -1624,7 +1624,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 				Item.MouseButton1Click:Connect(function()
 					pcall(callback, v)
 					Selected = v
-					Title.Text = Selected
+					Title.Text = "Background Themes - "..Selected
 					DropToggled = not DropToggled
 					Dropdown:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
 					DropdownPattern:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
@@ -1716,7 +1716,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 
 				Item.MouseButton1Click:Connect(function()
 					pcall(callback, addtext)
-					Title.Text = text
+					Title.Text = "Background Themes - "..Selected
 					Selected = addtext
 					DropToggled = not DropToggled
 					Dropdown:TweenSize(UDim2.new(0, 457, 0, 43), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
