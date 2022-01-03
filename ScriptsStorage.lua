@@ -1,4 +1,4 @@
-UniversalExploits = {
+ScriptsStorage = {
 	
 	Hydroxide = {
 		Name = "Hydroxide",
@@ -44,4 +44,4 @@ UniversalExploits = {
 	},
 }
 
-return UniversalExploits
+return ScriptsStorage
