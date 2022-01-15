@@ -14,7 +14,7 @@ Universals = {
 	},
 	CmdX = {
 		Name = "CMD-X",
-		SearchName = "CMD-X",
+		SearchName = "CMDX",
 		Colour = Color3.fromRGB(141, 42, 22),
 		Code = "https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",
 	},
