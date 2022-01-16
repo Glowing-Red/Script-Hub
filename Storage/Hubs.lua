@@ -12,13 +12,23 @@ Hubs = {
 	},
 	MrJack = {
 		Name = "Mr Jack",
-		SearchName = "MrJack-Mr Jack",
+		SearchName = "MrJack",
 		Icon = "Default",
 		CustomIcon = "None",
-		CustomIconColour = Color3.fromRGB(255, 255, 255),
+		CustomIconColour = Color3.fromRGB(77, 102, 191),
 		CustomTextColour = Color3.fromRGB(255, 255, 255),
 		BackgroundColour = Color3.fromRGB(77, 102, 191),
-		Code = "https://pastebinp.com/raw/eccv9pgu"
+		Code = "https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua"
+	},
+	Testing = {
+		Name = "Testing",
+		SearchName = "Testing",
+		Icon = "Default",
+		CustomIcon = "None",
+		CustomIconColour = Color3.fromRGB(77, 102, 191),
+		CustomTextColour = Color3.fromRGB(255, 255, 255),
+		BackgroundColour = Color3.fromRGB(77, 102, 191),
+		Code = "https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua"
 	},
 }
 
